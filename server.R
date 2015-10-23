@@ -3,11 +3,11 @@
 ###################################################
 
 # STEP 1: PREPARING DATA
-library(rattle)
+library(HDclassif)
 library(cluster);library(fpc)
 library(permute);library(lattice);library(vegan)
 library(shiny)
-data(wine, package = "rattle")
+data(wine)
 df <- scale(wine[-1]) # Wine data
 
 # STEP 2: Define server logic required to draw a cluster plot
